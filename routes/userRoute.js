@@ -6,7 +6,7 @@ import {imageupload} from "../controller/photoupload.js"
 import { upload } from "../middleware/upload.js";
 const router=express.Router();
 
-router.post("/sign-up",signup);
+router.post("/signup",signup);
 router.post("/login",login);
 router.post("/contactus",contact);
 router.get("/dashboard",getUserDataForDashboard)
