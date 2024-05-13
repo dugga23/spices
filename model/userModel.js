@@ -3,7 +3,11 @@ import validator from "validator";
 import bcrypt from "bcrypt";
 
 const userSchema = new mongoose.Schema({
- 
+ _id: {
+  type:String,
+  default:mongoose.Types.ObjectId,
+  
+ },
   email: {
     type: String,
     required: [true, "please Enter Your Email"],
