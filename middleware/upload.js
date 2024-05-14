@@ -1,3 +1,4 @@
+// upload.js
 import multer from 'multer';
 import fs from "fs";
 
@@ -20,4 +21,4 @@ const storage = multer.diskStorage({
 });
 
 // Initialize multer with storage options
- export const uploadMiddleware = multer({ storage: storage }).single('image');
+export const upload = multer({ storage: storage }).single('image');
