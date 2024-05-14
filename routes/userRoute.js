@@ -15,7 +15,7 @@ import {
 import { upload } from "../middleware/upload.js";
 import { getproductDashboard } from "../controller/productDashboard.js";
 import { generateotp, verifyotp } from "../controller/otp.js";
-import { generateQRCode } from "../controller/qr.js";
+
 
 const router = express.Router();
 
@@ -31,7 +31,7 @@ router.post("/otp", generateotp);
 router.post("/verifyotp", verifyotp);
 // router.put("/forgotpassword/:userId",forgotpassword);
 router.post("/forgotpassword", forgotpassword);
-router.get("/qr", generateQRCode);
+
 //http://localhost:1025/api/v1/qr?url=https://rankyatra.com
 
 export default router;
