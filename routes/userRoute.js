@@ -12,7 +12,7 @@ import {
   deletePhoto,
   updateCaption,
 } from "../controller/photoupload.js";
-import uploadMiddleware  from "../middleware/upload.js";
+import {uploadMiddleware}  from "../middleware/upload.js";
 import { getproductDashboard } from "../controller/productDashboard.js";
 import { generateotp, verifyotp } from "../controller/otp.js";
 
